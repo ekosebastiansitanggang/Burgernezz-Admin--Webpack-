@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Burgernezz | Semua Penjualan</title>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
+</head>
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg navbar-warning bg-danger">
+  <a class="navbar-brand" href="home.html">Burgernezz Admin</a>
+  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Halaman Utama</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="order.html">Pesanan</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="sales.html">Penjualan</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="food.html">Makanan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="logoutBtn">Keluar</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--Content-->
+<body>
+  <!--Sales This Months-->
+  <div class="container-fluid">
+    <h2 class="mt-3">Penjualanan Bulan Ini</h2>
+    <p class="mt-1" id="thisMonth">Bulan Ini</p>
+    <table class="table table-striped mt-1   table-hover table-bordered border-dark" id="salestable">
+      <thead>
+        <tr class="table-primary">
+          <th>Total Order</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody id="tbody5">
+        <tr id="tr1">
+        </tr>
+      </tbody>
+      <table class="table table-striped mt-1 table-hover table-bordered border-dark" id="thismonthsales">
+        <thead>
+          <tr class="table-primary">
+            <th scope="col">No Order</th>
+            <th scope="col">Email</th>
+            <th scope="col">Alamat</th>
+            <th scope="col">No Telp</th>
+            <th scope="col">Total Bayar</th>
+            <th scope="col">Jenis Pembayaran</th>
+            <th scope="col">ID Pembayaran</th>
+            <th scope="col">Status Pembayaran</th>
+            <th scope="col">Tanggal Pemesanan</th>
+          </tr>
+        </thead>
+        <tbody id="tbody6">
+        </tbody>
+    </table>
+  </div>
+  <!--Total Sales-->
+  <div class="container-fluid">
+    <h2 class="mt-3">Semua Penjualan</h2>
+    <table class="table table-striped mt-2 table-hover table-bordered border-dark" id="salestable">
+      <thead>
+        <tr class="table-primary">
+          <th>Total Order</th>
+          <th>Total Price</th>
+        </tr>
+      </thead>
+      <tbody id="tbody7">
+        <tr id="tr2">
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!--Copyright-->
+  <div class="container-fluid">
+    <div class="card mt-3 bg-primary">
+      <div class="card-body">
+        <p class="card-text text-black text-center">Created with Bootstrap version 5.2</p>
+      </div>
+    </div>
+  </div>
+  <!--Script for Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+  <script type="module" src="js\logout.js"></script>
+  <script type="module" src="js\sales.js"></script>
+</body>
+</html>

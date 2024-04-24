@@ -1,0 +1,13 @@
+Add function to check if user either already sign in or not. If not then put back into login menu.-
+Add function to sign-in using email and password.
+Add function to sign-out, either by taking too long or by clickng sign out.
+Add function to display all order database in tables. V
+Add function to calculate all total order and total income and display it into home.
+Add function to calculate all total order and total income per months.
+Use webpack to turn firebase into usable codes.
+Test.
+
+After frustated with Firestore, now a workaround.
+Order separated into three: original order, all latest order, and all done order.
+For details is maybe.
+Pagination is another story for another days.

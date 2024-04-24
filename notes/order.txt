@@ -1,0 +1,4 @@
+Sudah Pesan, belum bayar
+Sudah Pesan, sudah bayar
+Sedang Diantar, sudah bayar
+Sudah Diantar, sudah bayar

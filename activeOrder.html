@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Burgernezz | Pesanan Aktif</title>
+    <link rel="stylesheet" href="bootstrap\css\bootstrap.css">
+</head>
+<!--Navigation-->
+<nav class="navbar navbar-expand-lg navbar-warning bg-danger">
+  <a class="navbar-brand" href="home.html">Burgernezz Admin</a>
+  <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="nav navbar-nav mr-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="home.html">Halaman Utama</span></a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link text-white" href="order.html">Pesanan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="sales.html">Penjualan</a>
+        </li>
+      <li class="nav-item">
+        <a class="nav-link" href="food.html">Makanan</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#" id="logoutBtn">Keluar</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<!--Content-->
+<body>
+  <!--All Order on Tables-->
+  <div class="container-fluid">
+    <!--Filter-->
+    <div class="btn-group mt-3">
+      <button type="button" class="btn btn-warning  dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+        Filter Pesanan
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="order.html">Semua Pesanan</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="activeOrder.html">Pesanan Aktif</a></li>
+        <li><a class="dropdown-item" href="doneOrder.html">Pesanan yang sudah selesai</a></li>
+      </ul>
+    </div>
+    <!--Actual Tables-->
+    <table class="table table-striped mt-2 table-hover table-bordered border-dark" id="tableorder">
+      <thead>
+        <tr class="table-primary">
+          <th scope="col">No Order</th>
+          <th scope="col">Email</th>
+          <th scope="col">Alamat</th>
+          <th scope="col">No Telp</th>
+          <th scope="col">Total Bayar</th>
+          <th scope="col">Jenis Pembayaran</th>
+          <th scope="col">ID Pembayaran</th>
+          <th scope="col">Status Pembayaran</th>
+          <th scope="col">Tanggal Pemesanan</th>
+          <th scope="col">List Pesanan</th>
+        </tr>
+      </thead>
+      <tbody id="tbody1active">
+      </tbody>
+    </table>
+     <!--Halaman--> 
+    <nav aria-label="Halaman Order">
+      <ul class="pagination justify-content-end mt-2">
+        <li class="page-item"><a class="page-link" href="#" id="prevButton">Sebelumnya</a></li>
+        <li class="page-item"><a class="page-link" href="#" id="nextButton">Selanjutnya</a></li>
+      </ul>
+    </nav>
+  </div>
+  <!--Copyright-->
+  <div class="container-fluid">
+    <div class="card mt-3 bg-primary">
+      <div class="card-body">
+        <p class="card-text text-black text-center">Created with Bootstrap version 5.2</p>
+      </div>
+    </div>
+  </div>
+  <!--Script for Bootstrap-->
+  <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  <script type="module" src="js\logout.js"></script>
+  <script type="module" src="js\activeOrder.js"></script>
+</body>
+</html>
